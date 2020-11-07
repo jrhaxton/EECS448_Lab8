@@ -1,0 +1,21 @@
+<html>
+    <p>Password <input type="text" id="in1"></p>
+    <p>Confirm Password <input type="text" id="in2"></p>
+    <button onclick="validate()">Validate</button>
+    <script>
+        function validate()
+        {
+            var inpt1 = document.getElementById('in1').value;
+            var inpt2 = document.getElementById('in2').value;
+            if (inpt1 !== inpt2){
+                alert("The passwords do not match!");
+            }
+            else if (inpt1.length < 8 || inpt2.length < 8){
+                alert("The length of the password must be at least 8.");
+            }
+            else{
+                alert("Success");
+            }
+        }
+    </script>
+</html>
