@@ -1,0 +1,40 @@
+<html>
+    <h1>
+        Here are some The Office memes
+    </h1>
+        <button onclick="prev()" id="prev">Prev</button>
+        <img name="img" src="pic1.jpg" width="400" height="400">
+        <button button onclick="next()" id="next">Next</button>
+        <script>
+            var pics = [];
+            var i = 0;
+            pics[0]= 'pic1.jpg';
+            pics[1]= 'pic2.jpg';
+            pics[2]= 'pic3.jpg';
+            pics[3]= 'pic4.jpeg';
+            pics[4]= 'pic5.jpeg';
+
+            function prev(){
+                if(i > 0)
+                {
+                    i--;
+                    document.img.src = pics[i];
+                }
+                else{
+                    document.img.src = pics[4];
+                    i = 4
+                }
+            }
+            function next(){
+                if(i < 4)
+                {
+                    i++;
+                    document.img.src = pics[i];
+                }
+                else{
+                    document.img.src = pics[0];
+                    i = 0;
+                }
+            }
+        </script>
+</html>
