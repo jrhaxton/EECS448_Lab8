@@ -1,0 +1,28 @@
+html{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+div.pic{
+    font-size: 36px;
+    background-image: url(stars.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+img{
+    width: 300px;
+    height: 425px;
+    padding: 1rem;
+}
+div.bio{
+    font-size: large;
+    text-align: left;
+}
+div.links{
+    text-align: left;
+}
+
+a:hover{
+    color: white;
+}
